@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'EditorialOld';
+    src: url('../fonts/ppeditorialold-ultralight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueHaasDisplay';
+    src: url('../fonts/NeueHaasDisplayThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'NeueHaasDisplay', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.left-side{
+    width: 50%;
+}
+
+.right-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.right-side h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.right-side p{
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.botones{
+    background-color:#bbb193;
+    text-decoration: none;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.5s;
+    font-size: 18px;
+}
+
+
+.botones:hover {
+  background-color: #7c745c;
+}
+
+
+
+
+/*LOGIN - INICIO SESION*/
+
+.titulo{
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;  
+}
+
+ .configform1{    
+    display: flex;
+    justify-content: center;    
+    color: #fff;    
+}
+.error{
+    border-color: red;
+}
+ label{
+    font-size: 24px;   
+    float: left;
+    margin:10px 20px 10px 20px;
+ }
+
+ /*input*/
+
+input{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #c3c0c0;
+    padding: 10px 20px;
+}
+
+input::placeholder{
+    color: #c3c0c0;
+
+}
+
+.boton-login{
+    display: block;
+    width: 100%;
+    background-color:#bbb193;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.5s;
+    font-size: 18px;
+}
+
+.boton-login:hover{
+    background-color: #7c745c;
+}
+
+.form-control{
+    background-color: transparent !important;
+    font-size: 20px;   
+}
+
+footer{    
+    background-color: #000;
+    padding:20px 20px;
+}
+.formatospie{
+    color:#fff;
+    font-size: 24px;
+}
+
+/*lo pone a todo lo ancho*/
+video{
+    object-fit: cover;   
+}
+
+fieldset {
+  border: none;
+}
+
+
+/*LANDING*/
+
+.botones-landing{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-landing{
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 110px;
+}

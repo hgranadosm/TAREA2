@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'EditorialOld';
+    src: url('../fonts/ppeditorialold-ultralight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueHaasDisplay';
+    src: url('../fonts/NeueHaasDisplayThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden; 
+    height: 100%;
+    font-family: 'NeueHaasDisplay', sans-serif;
+    background-color: #f1ebe3;
+}
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.contenedor-fondo{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/hotel.webp");
+    background-size: contain; /* 👈 Esto hace que no se corte */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* --------------------- HEADER --------------------- */
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.imagen-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+   
+}
+
+.menu-header a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+
+.menu-header a:hover{
+    color: #7c745c;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+.logo{
+    height: 70px;
+}
+
+
+.tituloPrincipal {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.tituloPrincipal h1 {
+    margin-bottom: -50px;
+    font-size: 107px;
+    letter-spacing: 1px;
+    font-family: 'EditorialOld';
+    font-weight: 100;
+}
+
+.contenedor-fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.segunda-seccion {
+    display: flex;
+    width: 100%;
+    padding: 100px 14% 100px 14%;
+    /* text-align: center; */
+    color: #333;
+    justify-content: center;
+    gap: 83px;
+}
+
+.span{
+    font-family: 'EditorialOld';
+    font-style: italic;
+    font-weight: bold;
+}
+
+.frase1{
+    width: 50%;
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.frase1 h2{
+    font-family: 'EditorialOld';
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.parrafo{
+    width: 50%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.parrafo p{
+    padding: 20px 75px 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.videos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.videos video{
+    height: 121vh;
+    width: 90%;
+}
