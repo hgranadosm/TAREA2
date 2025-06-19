@@ -118,6 +118,8 @@ header {
     z-index: 1;
 }
 
+
+/* ---------------------------- SEGUNDA PARTE ---------------------------- */
 .segunda-seccion {
     display: flex;
     width: 100%;
@@ -147,6 +149,7 @@ header {
     font-family: 'EditorialOld';
     font-weight: 400;
     font-size: 40px;
+      letter-spacing: 1px;
 }
 
 .parrafo{
@@ -175,4 +178,124 @@ header {
 .videos video{
     height: 121vh;
     width: 90%;
+}
+
+/* ---------------------------- TERCERA PARTE ---------------------------- */
+.tercer-seccion {
+    display: flex;
+    width: 100%;
+    padding: 0px 5% 100px 5%;
+    align-items: start;
+    color: #333;
+}
+
+.frase2{
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: start;
+    padding: 100px 20px 20px 5%;
+}
+
+.frase2 h2{
+    font-family: 'EditorialOld';
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+
+.parrafo2{
+    min-width: 28%;
+    flex: 1;
+    display: flex;
+    align-items: start;
+    height: 200px;
+}
+
+.parrafo2 p{
+    padding: 0px 20px 0px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagen-box{
+    height: 426px;
+    overflow: hidden;
+  
+}
+
+.imagen-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ---------------------------- CUARTA PARTE ---------------------------- */
+
+.contenedor-cuarta-seccion{
+    position: relative; /* 🔥 necesario para posicionar el texto encima */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor-cuarta-seccion img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frase-cuarta-seccion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.frase-cuarta-seccion h2 {
+    font-family: 'EditorialOld';
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------- QUINTA PARTE ---------------------------- */
+
+.contenedor-quinta-seccion{
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 100px 20px 20px 10%;
+}
+
+.contenedor-quinta-seccion h2{
+    font-family: 'EditorialOld';
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.parrafo-galeria {
+    width: 35%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 200px;
 }
