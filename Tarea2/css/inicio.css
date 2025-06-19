@@ -210,6 +210,7 @@ header {
     display: flex;
     align-items: start;
     height: 200px;
+    max-width: 28%;
 }
 
 .parrafo2 p{
@@ -221,8 +222,9 @@ header {
 
 .contenedor-imagenes{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 20px;
+    flex: 1;
 }
 
 .imagen-box{
@@ -303,6 +305,17 @@ header {
     font-size: 14px;
     font-weight: 400;
 }
+
+.contenedor-imagenes-galeria{
+    display: flex;
+    gap: 20px;
+}
+
+.galeria-contenedor-img img{
+    width: 100%;
+}
+
+
 
 
 /* ---------------------------- SEXTA PARTE ---------------------------- */
