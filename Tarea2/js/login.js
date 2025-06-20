@@ -2,11 +2,11 @@ document.getElementById("btn-login").addEventListener("click", login);
 
 function validation_alert(ptext) {
     swal.fire({
-        title: "Verificar la entrada de datos",
+        title: "Asegúrate de que todos los campos estén completos",
         text: ptext,
-        confirmButtonText: "Intentar de nuevo",
+        confirmButtonText: "Intentar nuevamente",
         confirmButtonColor: "#8b0000",
-        html: '<iframe width="320" height="240" frameborder="0" src="https://lottie.host/embed/a0b54468-34e0-4c59-817a-04f570748c7d/MMAnIzintH.lottie"></iframe> <br><p>' + ptext + " </p>", 
+        html: '<iframe width="320" height="240" frameborder="0" src="https://lottie.host/embed/889f8969-bef6-45eb-a988-15965bfa28c5/I8XhTMjfrO.lottie"></iframe> <br><p>' + ptext + " </p>", 
     });
 }
 
@@ -39,8 +39,8 @@ function login() {
                 customClass: {                 
                     title: 'formatos1',                      
                 },
-                timer: 5000,
-                html: '<iframe width="320" height="240" frameborder="0" src="https://lottie.host/embed/d41bf2fc-7a56-43e9-b9f6-79e16bc54c85/dVlSUnx5VL.lottie"></iframe> <br><br><p>Esperar un momento...</p>',                
+                timer: 4000,
+                html: '<iframe width="320" height="240" frameborder="0" src="https://lottie.host/embed/6cd7f08c-451a-459e-a3c0-f97a03e636af/IEcz3avkKm.lottie"></iframe> <br><br><p>Esperar un momento...</p>',                
             }).then(() => {
                 window.location.href = "landing.html", "blank"; 
             });

@@ -97,7 +97,7 @@ body{
     color: #fff;    
 }
 .error{
-    border-color: red;
+    border-color: rgb(148, 11, 11);
 }
  label{
     font-size: 24px;   
